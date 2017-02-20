@@ -8,9 +8,10 @@ import './index.css';
 
 ReactDOM.render(
   <Router history={hashHistory}>
-    <Route path="/" component={App}/>
-    <Route path="/about" component={About}/>
-    <Route path="/repos" component={Repos}/>
+    <Route path="/" component={App}>
+      <Route path="/about" component={About}/>
+      <Route path="/repos" component={Repos}/>
+    </Route>    
   </Router>,
   document.getElementById('root')
 );
