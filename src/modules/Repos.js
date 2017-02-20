@@ -8,9 +8,11 @@ class Repos extends Component {
                 <h2>Repos</h2>
 
                 <ul>
-                    <li><Link to="/repos/reactjs/react-router">React Route</Link></li>
-                    <li><Link to="/repos/facebook/react">React</Link></li>
+                    <li><Link to="/repos/reactjs/react-router" activeClassName="active">React Route</Link></li>
+                    <li><Link to="/repos/facebook/react" activeClassName="active">React</Link></li>
                 </ul>
+
+                {this.props.children}
             </div>
         );
     }
