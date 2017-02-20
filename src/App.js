@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router';
+import { Link, IndexLink } from 'react-router';
 import logo from './logo.svg';
 import './App.css';
 
@@ -15,6 +15,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <ul role="nav">
+          <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
           <li><Link to="/about" activeClassName="active">About</Link></li>
           <li><Link to="/repos" activeClassName="active">Repos</Link></li>
         </ul>
