@@ -4,10 +4,6 @@ import * as counterActions from '../actions/counter-actions';
 import { bindActionCreators } from 'redux';
 
 class IncrementDecrementComponent extends Component {
-    constructor(props) {
-        super(props)
-    }
-
     render() {
         return (
             <div>
